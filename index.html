@@ -18,7 +18,7 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
     <a href="#skill" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Skill</a>
     <a href="#prevskil" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Past Skill</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
@@ -28,6 +28,7 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Skill</a>
   <a href="#skill" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Skill</a>
   <a href="#prevskil" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Past Skill</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
@@ -35,6 +36,48 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <!--about-->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="skill">
+    <h2 class="w3-wide">About</h2>
+    <p class="w3-opacity"><i>I am passionate about what i do and what i build</i></p>
+    <p class="w3-justify">
+    	<ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Programming Language 
+        	<span class="w3-tag w3-grey w3-margin-left">Java</span>
+            <span class="w3-tag w3-grey w3-margin-left">Python</span>
+            <span class="w3-tag w3-grey w3-margin-left">JavaScript</span>
+        </li>
+        <li class="w3-padding">Database
+        	<span class="w3-tag w3-grey w3-margin-left">Cassandra</span>
+            <span class="w3-tag w3-grey w3-margin-left">Postgres</span>
+            <span class="w3-tag w3-grey w3-margin-left">Mysql</span>
+            <span class="w3-tag w3-grey w3-margin-left">Redis</span>
+            <span class="w3-tag w3-grey w3-margin-left">MongoDB</span>
+        </li>
+        <li class="w3-padding">Cloud
+        	<span class="w3-tag w3-grey w3-margin-left">AWS</span>
+            <span class="w3-tag w3-grey w3-margin-left">EKS</span>
+            <span class="w3-tag w3-grey w3-margin-left">ECR</span>
+            <span class="w3-tag w3-grey w3-margin-left">VPC, EC2</span>
+            <span class="w3-tag w3-grey w3-margin-left">Auto-scaling</span>
+            <span class="w3-tag w3-grey w3-margin-left">RDS</span>
+            <span class="w3-tag w3-grey w3-margin-left">RDS scaling</span>
+            <span class="w3-tag w3-grey w3-margin-left">HA</span>
+            <span class="w3-tag w3-grey w3-margin-left">Load Balancer Types on AWS</span>
+            <span class="w3-tag w3-grey w3-margin-left">Monitoring and logging using CloudWatch</span>
+        </li>
+        <li class="w3-padding">Cloud Native
+        	<span class="w3-tag w3-grey w3-margin-left">Docker</span>
+            <span class="w3-tag w3-grey w3-margin-left">Kubernetes</span>
+            <span class="w3-tag w3-grey w3-margin-left">On-prim and Cloud - AWS/Azure</span>
+            <span class="w3-tag w3-grey w3-margin-left">Microservice</span>
+            <span class="w3-tag w3-grey w3-margin-left">SRE</span>
+            <span class="w3-tag w3-grey w3-margin-left">Observability</span>
+        </li>
+        </ul>
+    </p>
+  </div>
+  
   <!-- The Skill Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="skill">
     <h2 class="w3-wide">Skill</h2>
