@@ -65,6 +65,29 @@ body{
 .imgEffet {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 </style>
 </head>
 <body>
@@ -93,6 +116,9 @@ body{
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
   <!--about-->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <div class="typewriter">
+      <h1>Bikash Sundaray</h1>
+    </div>
     <h2 class="w3-wide">About
       <a href="https://www.linkedin.com/in/bikashkumars/" target="_blank"><i class="fa fa-linkedin"></i></a>
     </h2>
