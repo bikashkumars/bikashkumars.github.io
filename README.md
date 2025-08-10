@@ -43,7 +43,6 @@ I am a **Solution Architect** at **Airbus** with **16+ years of experience** in 
 - eGovernment
 
 ## Contact Information
-- **Email**: bikashkumars@gmail.com
 - **LinkedIn**: [linkedin.com/in/bikashkumars](https://linkedin.com/in/bikashkumars)
 - **GitHub**: [github.com/bikashkumars](https://github.com/bikashkumars)
 - **Portfolio**: [bikashkumars.github.io](https://bikashkumars.github.io)
