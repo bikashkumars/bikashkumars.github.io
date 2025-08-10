@@ -1,0 +1,9 @@
+About Me - Audio Script for Bikash Kumar Sundaray
+
+I am currently working as a Solution Architect at Airbus, leading end-to-end product development and deployment. With 16 plus years of experience in Scalable Systems, Cloud Native, Micro-Services, Big Data, OpenSource LLM models, Machine Learning, building large-scale products, Enterprise-grade DevOps practices, driving 10 Scrum Teams, Security, and Database management.
+
+I am passionate about what I do and what I build. Currently, I'm building data pipelines using AWS DataLake and opensource tools, managing cloud costs using FinOps, and implementing Data Governance. I'm also building LLM-based agents using ollama, LangChain, and Splunk to monitor data pipelines.
+
+As part of my role, I design new features, conduct system studies, participate in solution trains, and improve DevOps pipelines. I actively practice and implement microservices, API gateways, cloud-native architecture, REST APIs, Java design patterns, and Python design patterns in my day-to-day work.
+
+I lead Communities of Practice and Guilds for several service streams within our product and play an active role in SAFe agile PI planning and program backlog refinement, working collaboratively with multiple scrum teams on design and development.

@@ -1,466 +1,1303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Bikash Kumar Sundaray portfolio </title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-<style>
-.mySlides {display: none}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.w3-justify {
-  text-align: justify;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
-}
+    <!-- SEO Meta Tags -->
+    <title data-experience-years>Bikash Kumar Sundaray - Solution Architect | 16+ Years Experience | AWS, LLM, AI/ML
+        Expert</title>
+    <meta name="description" data-experience-text
+        content="Bikash Kumar Sundaray - Solution Architect at Airbus with 16+ years experience in Scalable Systems, Cloud Native, Micro-Services, Big Data, OpenSource LLM models, Machine Learning, DevOps practices, leading 10 Scrum Teams.">
+    <meta name="keywords"
+        content="Solution Architect, Software Architect, AWS, Cloud Native, Microservices, LLM, AI/ML, Machine Learning, DevOps, Kubernetes, Docker, Java, Python, Data Engineering, Airbus, Ericsson, Bikash Kumar Sundaray">
+    <meta name="author" content="Bikash Kumar Sundaray">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
 
-/* bottom ani */
-#bottomAni {
-	height: 400px;
-	/* max-height: 600px; */
-	width: 100%;
-	background-color: hsla(200,40%,30%,.4);
-	background-image:		
-		url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-		url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-		url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-		url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-		url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-	background-repeat: repeat-x;
-	background-position: 
-		0 20%,
-		0 100%,
-		0 50%,
-		0 100%,
-		0 0;
-	background-size: 
-		2500px,
-		800px,
-		500px 200px,
-		1000px,
-		400px 260px;
-	animation: 50s para infinite linear;
-	}
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" data-experience-years
+        content="Bikash Kumar Sundaray - Solution Architect | 16+ Years Experience">
+    <meta property="og:description"
+        content="Solution Architect at Airbus with expertise in AWS, LLM, AI/ML, Cloud Native architecture, and leading enterprise-scale development teams.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bikashkumars.github.io/">
+    <meta property="og:image" content="https://bikashkumars.github.io/profile-photo.jpg">
+    <meta property="og:site_name" content="Bikash Kumar Sundaray Portfolio">
+    <meta property="og:locale" content="en_US">
 
-@keyframes para {
-	100% {
-		background-position: 
-			-5000px 20%,
-			-800px 95%,
-			500px 50%,
-			1000px 100%,
-			400px 0;
-		}
-	}
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bikash Kumar Sundaray - Solution Architect">
+    <meta name="twitter:description"
+        content="16+ years experience in Solution Architecture, AWS, LLM, AI/ML, and enterprise software development."
+        data-experience-text>
+    <meta name="twitter:image" content="https://bikashkumars.github.io/profile-photo.jpg">
+    <meta name="twitter:creator" content="@bikashkumars">
 
-.boxEffect {
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-}
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bikashkumars.github.io/">
 
-.imgEffet {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-</style>
+    <!-- Structured Data (JSON-LD) for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bikash Kumar Sundaray",
+        "alternateName": "Bikash Kumar S",
+        "jobTitle": "Solution Architect",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Airbus"
+        },
+        "url": "https://bikashkumars.github.io/",
+        "image": "https://bikashkumars.github.io/profile-photo.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/bikashkumars",
+            "https://github.com/bikashkumars"
+        ],
+        "email": "bikashkumars@gmail.com",
+        "knowsAbout": [
+            "Solution Architecture",
+            "Software Architecture", 
+            "AWS Cloud Services",
+            "Large Language Models",
+            "Machine Learning",
+            "Artificial Intelligence",
+            "Microservices Architecture",
+            "DevOps",
+            "Kubernetes",
+            "Docker",
+            "Java Programming",
+            "Python Programming",
+            "Data Engineering",
+            "Cloud Native Development",
+            "Enterprise Software Development"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Solution Architect",
+            "description": "Leading end-to-end product development and deployment, building data pipelines using AWS DataLake, managing cloud costs using FinOps, and implementing LLM-based agents.",
+            "skills": "AWS, LLM, AI/ML, Cloud Native, Microservices, DevOps, Kubernetes, Java, Python"
+        },
+        "alumniOf": [
+            {
+                "@type": "Organization",
+                "name": "Airbus",
+                "startDate": "2023",
+                "jobTitle": "Solution Architect"
+            },
+            {
+                "@type": "Organization", 
+                "name": "Ericsson",
+                "startDate": "2016",
+                "endDate": "2023",
+                "jobTitle": "Software Architect"
+            }
+        ],
+        "description": "Solution Architect with 16+ years of experience in building scalable systems, cloud native architecture, microservices, big data, OpenSource LLM models, machine learning applications, and leading enterprise-grade DevOps practices."
+    }
+    </script>
 </head>
+
 <body>
-<!-- This source code is owned by Bikash Sundaray and should not be reused any where else-->
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-blue w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
-    <a href="#skill" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Skill</a>
-    <a href="#prevskil" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Past Skill</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
-  <a href="#skill" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Skill</a>
-  <a href="#prevskil" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Past Skill</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
-</div>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-  <!--about-->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-    <div class="typewriter">
-      <h1>Bikash Sundaray</h1>
-    </div>
-    <h2 class="w3-wide">About
-      <a href="https://www.linkedin.com/in/bikashkumars/" target="_blank"><i class="fa fa-linkedin"></i></a>
-    </h2>
-    <p class="w3-opacity"><i>I am passionate about what i do and what i build</i></p>
-    <div class="w3-panel w3-leftbar w3-sand">
-      <p class="w3-large w3-serif"><i>"~15 years experience Scalable System, Cloud Native, Micro-Services, Big data, OpenSource LLM model, Machine learning, Building large scale product, Enterprise grade DevOps pratices, Driving 10 Scrum Teams, Security and Database"</i></p>
-    </div>
-    <p class="w3-left-align">
-      <ul class="w3-ul w3-left-align">
-        <li>I am currently playing as a Solution Architect for end-to-end product development and deployment.</li>
-	<li>Building Data pipeline using AWS DataLake and Opensource tools. Manage cloud cost using FinOps and bringing Data Governance</li>
-	<li>Building LLM based Agent using ollma, LangChain and Splunk to monitor data pipeline</li>
-        <li>As part of my role, I design new features, conduct system studies, participate in solution Train, and improve the DevOps pipeline and code.</li>
-        <li>In addition, I work as a software engineer and cloud engineer to deliver valuable products that align with our program increment goals.</li>
-        <li>I take the initiative to study and design new features, and I regularly present progress and outcomes to stakeholders.</li>
-      </ul>
-      <br /><br />
-
-      <ul class="w3-ul w3-left-align">
-        <li>I actively practice and implement microservices, API gateways, cloud-native architecture, REST APIs, Java design patterns, and Python design patterns in my day-to-day work.</li>
-        <li>I create high-level and low-level design documents that incorporate non-functional requirements, operations, security, business logic, flow diagrams, sequence diagrams, and architecture diagrams.</li>
-        <li>I lead Communities of Practice (CoP) and Guilds for several service streams within our product.</li>
-        <li>I play an active role in SAFe agile PI planning and program backlog refinement, working collaboratively with multiple scrum teams on design and development.</li>
-      </ul>
-      <br /> <br />
-
-      Designed and maintained enterprise grade DevOps pipeline product life-cycle. <br />
-      I have integrated tools like Jenkins, SonarQube, Docker, buildah, JFrog, Jira, BlackDuck, FOSSA, Gitlab, Kubernetes, Container image scanning, Shell script and Notification System. <br /><br />
-
-      Build pipeline for Backend Java/Python Apps, DevSecOps, gitOps and Frontend react/angular Apps. <br />
-      Designed 1 click Deployment for Continous Delivery to Azure and AWS. <br />
-      Worked on Rollback. On Ops part i have deployed and configured Prometheus, ELK, Alert manager, Distributed trace tools like jaeger.
-      Also used CloudWatch and Azure contains insights for monitoring on Public cloud.
-    </p>
-  </div>
-  
-  <!-- The Skill Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="skill">
-    <h2 class="w3-wide">Skill</h2>
-    <p class="w3-opacity"><i>I upskill everyday and continous learner</i></p>
-    <p class="w3-justify">
-    	<ul class="boxEffect w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Domain Experience
-        	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">IoT</span>
-		<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Telecom</span>
-		<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Manufacturing</span>
-          	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Live Streaming</span>
-          	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Corporate Banking</span>
-          	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Healthcare</span>
-          	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">CSR</span>
-          	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">eGov</span>
-        </li>
-        <li class="w3-padding">Programming Language 
-        	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Java</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Python</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">JavaScript</span>
-        </li>
-	<li class="w3-padding">Data Pipeline
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">AWS Glue</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">AWS Athena</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">AWS S3</span>
-	    <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Data quality</span>
-	    <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Data Governance</span>
-	    <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Data Model</span>
-	    <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Apache Iceberg</span>
-	    <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">AWS SQS and Kafka</span>
-	    <span class="w3-tag w3-teal w3-margin-left w3-margin-top">RDS MSSQL, Postgres, MongoDB</span>
-	    <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Data Migration</span>
-	    <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Splunk Monitoring</span>
-	    <span class="w3-tag text-aqua w3-margin-left w3-margin-top">DataOps</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Terraform and CloudFormation</span>
-        </li>
-        <li class="w3-padding">Framework
-        	<span class="w3-tag w3-border-amber w3-margin-left w3-margin-top">Spring Boot</span>
-            <span class="w3-tag w3-border-amber w3-margin-left w3-margin-top">Quarkus</span>
-            <span class="w3-tag w3-border-amber w3-margin-left w3-margin-top">Flask</span>
-            <span class="w3-tag w3-border-amber w3-margin-left w3-margin-top">Open API</span>
-            <span class="w3-tag w3-border-amber w3-margin-left w3-margin-top">Kong</span>
-        </li>
-        <li class="w3-padding">Database
-        	<span class="w3-tag w3-teal w3-margin-left w3-margin-top">Cassandra</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Postgres</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Mysql</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Redis</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">MongoDB</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Dynamodb</span>
-            
-        </li>
-        <li class="w3-padding"> Machine Learning
-        	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">NLP</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Chatbot</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Rasa</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Spacy</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Google DialogFlow</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">TensorflowJS Model use</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Contextual Chatbots</span>
-            <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">ollma</span>
-	    <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">crew.ai</span>
-	    <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">Started Langchain</span>
-        </li>
-        <li class="w3-padding">Cloud
-        	<span class="w3-tag w3-indigo w3-margin-left w3-margin-top">AWS</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">EKS</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">ECR</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">VPC, EC2</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">Auto-scaling</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">RDS</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">RDS scaling</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">HA</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">Load Balancer Types on AWS</span>
-            <span class="w3-tag w3-indigo w3-margin-left w3-margin-top">Monitoring and logging using CloudWatch</span>
-        </li>
-        <li class="w3-padding">Cloud Native
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">kafka</span>
-        	  <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Docker</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Kubernetes</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">API Gateway</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">On-prim </span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">AWS</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Azure</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Microservice</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">SRE</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Observability</span>
-        </li>
-        <li class="w3-padding">AWS
-        	<span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">VPC</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">ELB ALB</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">RDS</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">ECR</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">EC2</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Scaling</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">EKS</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">IDM</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">CloudWatch</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Container insight</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Cost Optimization</span>
-        </li>
-        <li class="w3-padding">Azure
-        	<span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Azure VM</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Resource Groups</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Firewall</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Container Insights</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">App services</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Container Registry</span>
-        </li>
-        <li class="w3-padding">Tool
-        	<span class="w3-tag w3-purple w3-margin-left w3-margin-top">Postman</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">SoapUI</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Jmeter</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Git</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Intellij</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Docker Desktop</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Virtual Box</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Lens</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">SQL Developer</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Pylint</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">PMD and FindBugs</span>
-        </li>
-      </ul>
-    </p>
-    
-    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-      <div class="w3-third w3-margin-bottom">
-        <img src="/images/sw_architect.jpg" alt="Bikash" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Architect</b></p>
-          <p>Performance optimization, Architecture decision, HLD/LLD, Release plan, Automation, Migration, Code refactor, PI and Sprint Planning</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BKS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-translate="nav-home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-translate="nav-about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a></li>
+                <li><a href="#past-skills" class="nav-link" data-translate="nav-past-skills">Past Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-translate="nav-experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-translate="nav-projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <div class="language-dropdown">
+                    <button class="language-btn" id="languageBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-options" id="languageOptions">
+                        <div class="language-option" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="fr">
+                            <span class="flag">🇫🇷</span>
+                            <span>Français</span>
+                        </div>
+                        <div class="language-option" data-lang="it">
+                            <span class="flag">🇮🇹</span>
+                            <span>Italiano</span>
+                        </div>
+                        <div class="language-option" data-lang="hi">
+                            <span class="flag">🇮🇳</span>
+                            <span>हिंदी</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div>
-    
-      <div class="w3-third w3-margin-bottom">
-        <img src="/images/swe.png" alt="Bikash" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Developer</b></p>
-          <p>Spring Boot, Quarkus, Rest API, Kafka, AWS, Kubernetes, Docker, Kong, Python Flask</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero" itemscope itemtype="https://schema.org/Person">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title" itemprop="name"></h1>
+                    <span data-translate="hero-greeting">Hi, I'm</span> <span class="highlight"
+                        itemprop="givenName">Bikash Kumar</span> <span itemprop="familyName">Sundaray</span>
+                    </h1>
+                    <h2 class="hero-subtitle" data-translate="hero-title" itemprop="jobTitle">Solution Architect &
+                        Software Engineer</h2>
+                    <div class="hero-bio-highlight">
+                        <p data-translate="hero-bio" data-experience-text>16+ years of experience in building Scalable
+                            System, Cloud Native,
+                            Micro-Services, Big data, OpenSource LLM, AI Apps, Building large scale product, Enterprise
+                            grade DevOps,
+                            Driving 10 Scrum Teams, Security and Database</p>
+                    </div>
+                    <p class="hero-description" data-translate="hero-description">
+                        Passionate about building scalable systems and leading engineering teams to deliver exceptional
+                        software solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" data-translate="btn-work">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary" data-translate="btn-contact">Get In Touch</a>
+                    </div>
+
+
+
+                </div>
+                <div class="hero-image">
+                    <div class="hero-expertise-container">
+                        <!-- Top Row - 3 Badges Above Photo -->
+                        <div class="expertise-row expertise-top-row">
+                            <div class="expertise-badge">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-drafting-compass"></i>
+                                </div>
+                                <span>Architecture</span>
+                            </div>
+
+                            <div class="expertise-badge">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <span>Cloud</span>
+                            </div>
+
+                            <div class="expertise-badge">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <span>DevOps</span>
+                            </div>
+                        </div>
+
+                        <!-- Profile Card -->
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="bikash.png"
+                                    alt="Bikash Kumar Sundaray - Solution Architect at Airbus with 16+ years experience in AWS, LLM, AI/ML, and enterprise software development"
+                                    data-experience-text class="profile-photo" itemprop="image"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="profile-fallback" style="display: none;">
+                                    <i class="fas fa-user-tie" aria-label="Professional profile icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Row - 3 Badges Below Photo -->
+                        <div class="expertise-row expertise-bottom-row">
+                            <div class="expertise-badge">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <span>AI</span>
+                            </div>
+
+                            <div class="expertise-badge">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span>Security</span>
+                            </div>
+
+                            <div class="expertise-badge">
+                                <div class="expertise-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span>Data Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- About Section -->
+        <section id="about" class="about" itemscope itemtype="https://schema.org/AboutPage">
+        <div class="container">
+            <h2 class="section-title" data-translate="section-about">About Me</h2>
+            <div class="about-content">
+                <div class="about-main">
+                    <div class="about-text">
+                        <!-- Small Audio Player -->
+                        <div class="audio-player-small">
+                            <button class="audio-play-btn-small" id="audioPlayBtn" aria-label="Play About Me Audio">
+                                <i class="fas fa-play" id="playIcon"></i>
+                            </button>
+                            <span class="audio-description">Click here to play and listen about me in my own voice by clicking this button</span>
+                            <div class="audio-controls-small" id="audioControls" style="display: none;">
+                                <div class="audio-progress-small">
+                                    <div class="audio-progress-bar-small">
+                                        <div class="audio-progress" id="audioProgress"></div>
+                                    </div>
+                                    <span class="audio-time-small">
+                                        <span id="currentTime">0:00</span>/<span id="totalTime">0:00</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <audio id="aboutMeAudio" preload="metadata">
+                                <source src="about-me-audio.mp3" type="audio/mpeg">
+                                <source src="about-me-audio.ogg" type="audio/ogg">
+                                <source src="about-me-audio.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <p>
+                            I am currently working as a <strong>Solution Architect</strong> at <strong>Airbus</strong>,
+                            leading end-to-end product development and deployment. With <strong data-experience-text>16+
+                                years of
+                                experience</strong>
+                            in Scalable Systems, Cloud Native, Micro-Services, Big Data, OpenSource LLM models, Machine
+                            Learning, building large-scale products, Enterprise-grade DevOps practices, driving 10 Scrum
+                            Teams, Security, and Database management.
+                        </p>
+                        <p>
+                            I am passionate about what I do and what I build. Currently, I'm building data pipelines
+                            using
+                            AWS DataLake and opensource tools, managing cloud costs using FinOps, and implementing Data
+                            Governance. I'm also building LLM-based agents using ollma, LangChain, and Splunk to monitor
+                            data
+                            pipelines.
+                        </p>
+                        <p>
+                            As part of my role, I design new features, conduct system studies, participate in solution
+                            trains, and improve DevOps pipelines. I actively practice and implement microservices, API
+                            gateways, cloud-native architecture, REST APIs, Java design patterns, and Python design
+                            patterns in my day-to-day work.
+                        </p>
+                        <p>
+                            I lead Communities of Practice (CoP) and Guilds for several service streams within our
+                            product and play an active role in SAFe agile PI planning and program backlog refinement,
+                            working
+                            collaboratively with multiple scrum teams on design and development.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Current Role</h4>
+                                <p>Solution Architect at Airbus</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Experience</h4>
+                                <p data-experience-years>16+ years in Software Architecture</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Leadership</h4>
+                                <p>Driving 10 Scrum Teams</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Data and AI Focus</h4>
+                                <p>LLM Agents & Data Pipelines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-skills">
+                    <h3>Core Expertise</h3>
+                    <div class="skills-flow">
+                        <span class="skill-badge primary">Solution Architecture</span>
+                        <span class="skill-badge accent">Data Engineering</span>
+                        <span class="skill-badge primary">AI Engineering</span>
+                        <span class="skill-badge secondary">Java</span>
+                        <span class="skill-badge accent">Python</span>
+                        <span class="skill-badge secondary">AWS Cloud DataLake</span>
+                        <span class="skill-badge primary">FinOps</span>
+                        <span class="skill-badge accent">LangChain AI Agents</span>
+                        <span class="skill-badge secondary">Apache Iceberg</span>
+                        <span class="skill-badge primary">Microservices</span>
+                        <span class="skill-badge accent">Open LLM Models</span>
+                        <span class="skill-badge primary">Cloud Native Apps</span>
+                        <span class="skill-badge accent">Splunk</span>
+                        <span class="skill-badge secondary">DevOps</span>
+                        <span class="skill-badge accent">Web and AI Security</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="w3-third w3-margin-bottom">
-        <img src="/images/DevOps_SRE.png" alt="Bikash" style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>DevOps and SRE</b></p>
-          <p>Observability, Open Source DevOps Stack, Monitoring, Scripting</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-page">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="section-title" data-translate="section-skills">Current Skills</h2>
+                    <p class="page-subtitle">I upskill everyday and continuous learner</p>
+                </div>
+
+                <div class="skills-categories">
+                    <!-- Domain Experience -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-industry"></i>
+                            <h3>Domain Experience</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag domain">IoT</span>
+                            <span class="skill-tag domain">Telecom</span>
+                            <span class="skill-tag domain">Manufacturing</span>
+                            <span class="skill-tag domain">Content Streaming</span>
+                            <span class="skill-tag domain">Corporate Banking</span>
+                            <span class="skill-tag domain">Healthcare</span>
+                            <span class="skill-tag domain">CSR</span>
+                            <span class="skill-tag domain">eGov</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag programming">Java</span>
+                            <span class="skill-tag programming">Python</span>
+                            <span class="skill-tag programming">JavaScript</span>
+                            <span class="skill-tag programming">Lua</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Pipeline -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Data Pipeline</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag data">AWS Glue</span>
+                            <span class="skill-tag data">AWS Athena</span>
+                            <span class="skill-tag data">Parquet</span>
+                            <span class="skill-tag data">AWS S3</span>
+                            <span class="skill-tag data">Data Quality</span>
+                            <span class="skill-tag data">Data Governance</span>
+                            <span class="skill-tag data">Data Model</span>
+                            <span class="skill-tag data">Apache Iceberg</span>
+                            <span class="skill-tag data">Kafka</span>
+                            <span class="skill-tag data">RDS MSSQL, Postgres, MongoDB</span>
+                            <span class="skill-tag data">Data Migration</span>
+                            <span class="skill-tag data">Splunk Monitoring</span>
+                            <span class="skill-tag data">DataOps</span>
+                            <span class="skill-tag data">Terraform</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Frameworks</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag framework">LangChain</span>
+                            <span class="skill-tag framework">Spring Boot</span>
+                            <span class="skill-tag framework">Flask</span>
+                            <span class="skill-tag framework">Open API</span>
+                            <span class="skill-tag framework">Kong</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag database">Cassandra</span>
+                            <span class="skill-tag database">Postgres</span>
+                            <span class="skill-tag database">MySQL</span>
+                            <span class="skill-tag database">Redis</span>
+                            <span class="skill-tag database">MongoDB</span>
+                            <span class="skill-tag database">DynamoDB</span>
+                            <span class="skill-tag database">Vector DBs</span>
+                            <span class="skill-tag database">MSSQL</span>
+                            <span class="skill-tag database">DuckDB</span>
+                            <span class="skill-tag database">Prometheus</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-brain"></i>
+                            <h3>AI Engineering</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag ml">NLP</span>
+                            <span class="skill-tag ml">Chatbot</span>
+                            <span class="skill-tag ml">Rasa</span>
+                            <span class="skill-tag ml">Spacy</span>
+                            <span class="skill-tag ml">Google DialogFlow</span>
+                            <span class="skill-tag ml">TensorflowJS</span>
+                            <span class="skill-tag ml">Contextual Chatbots</span>
+                            <span class="skill-tag ml">ollma</span>
+                            <span class="skill-tag ml">crew.ai</span>
+                            <span class="skill-tag ml">OpenAI SDK</span>
+                            <span class="skill-tag ml">Langchain Agent</span>
+                            <span class="skill-tag ml">Strands Agent</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Cloud</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag cloud">AWS</span>
+                            <span class="skill-tag cloud">Azure</span>
+                            <span class="skill-tag cloud">GCP</span>
+                            <span class="skill-tag cloud">EKS</span>
+                            <span class="skill-tag cloud">ECR</span>
+                            <span class="skill-tag cloud">EC2</span>
+                            <span class="skill-tag cloud">Auto-scaling</span>
+                            <span class="skill-tag cloud">RDS</span>
+                            <span class="skill-tag cloud">RDS scaling</span>
+                            <span class="skill-tag cloud">HA</span>
+                            <span class="skill-tag cloud">ELB</span>
+                            <span class="skill-tag cloud">CloudWatch</span>
+                            <span class="skill-tag cloud">FinOps</span>
+                            <span class="skill-tag cloud">Lake Formation</span>
+                            <span class="skill-tag cloud">BigQuery</span>
+                            <span class="skill-tag cloud">Vertex AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Native -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-cubes"></i>
+                            <h3>Cloud Native</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag cloudnative">Kafka</span>
+                            <span class="skill-tag cloudnative">Docker</span>
+                            <span class="skill-tag cloudnative">containerd</span>
+                            <span class="skill-tag cloudnative">Buildah</span>
+                            <span class="skill-tag cloudnative">rkt</span>
+                            <span class="skill-tag cloudnative">Podman</span>
+                            <span class="skill-tag cloudnative">Alpine</span>
+                            <span class="skill-tag cloudnative">Kubernetes</span>
+                            <span class="skill-tag cloudnative">API Gateway</span>
+                            <span class="skill-tag cloudnative">On-prim</span>
+                            <span class="skill-tag cloudnative">AWS</span>
+                            <span class="skill-tag cloudnative">Azure</span>
+                            <span class="skill-tag cloudnative">Microservices</span>
+                            <span class="skill-tag cloudnative">SRE</span>
+                            <span class="skill-tag cloudnative">Kong</span>
+                            <span class="skill-tag cloudnative">Observability</span>
+                            <span class="skill-tag cloudnative">Helm Chart</span>
+                            <span class="skill-tag cloudnative">IaC</span>
+                        </div>
+                    </div>
+
+                    <!-- AWS Specific -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fab fa-aws"></i>
+                            <h3>AWS Services</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag aws">Networking</span>
+                            <span class="skill-tag aws">ELB</span>
+                            <span class="skill-tag aws">RDS</span>
+                            <span class="skill-tag aws">ECR</span>
+                            <span class="skill-tag aws">Clustering</span>
+                            <span class="skill-tag aws">Cross Region setup</span>
+                            <span class="skill-tag aws">DMS</span>
+                            <span class="skill-tag aws">EC2</span>
+                            <span class="skill-tag aws">Scaling</span>
+                            <span class="skill-tag aws">EKS</span>
+                            <span class="skill-tag aws">IAM</span>
+                            <span class="skill-tag aws">CloudWatch</span>
+                            <span class="skill-tag aws">Container</span>
+                            <span class="skill-tag aws">Cost</span>
+                            <span class="skill-tag aws">S3</span>
+                            <span class="skill-tag aws">Terraform IaC</span>
+                        </div>
+                    </div>
+
+                    <!-- Azure -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fab fa-microsoft"></i>
+                            <h3>Azure</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag azure">Azure VM</span>
+                            <span class="skill-tag azure">Resource Groups</span>
+                            <span class="skill-tag azure">Firewall</span>
+                            <span class="skill-tag azure">Container Insights</span>
+                            <span class="skill-tag azure">App services</span>
+                            <span class="skill-tag azure">Container Registry</span>
+                            <span class="skill-tag azure">Service Account</span>
+                            <span class="skill-tag azure">Terraform IaC</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag tools">Postman</span>
+                            <span class="skill-tag tools">SoapUI</span>
+                            <span class="skill-tag tools">Jmeter</span>
+                            <span class="skill-tag tools">Git</span>
+                            <span class="skill-tag tools">Kiro IDE</span>
+                            <span class="skill-tag tools">Windsurf IDE</span>
+                            <span class="skill-tag tools">Cursor AI</span>
+                            <span class="skill-tag tools">AI SDK</span>
+                            <span class="skill-tag tools">Intellij</span>
+                            <span class="skill-tag tools">Docker Desktop</span>
+                            <span class="skill-tag tools">Virtual Box</span>
+                            <span class="skill-tag tools">Lens</span>
+                            <span class="skill-tag tools">SQL Developer</span>
+                            <span class="skill-tag tools">Pylint</span>
+
+                        </div>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Security</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag security">FOSSA</span>
+                            <span class="skill-tag security">BlackDuck</span>
+                            <span class="skill-tag security">Composition Analysis</span>
+                            <span class="skill-tag security">IBM App Scan</span>
+                            <span class="skill-tag security">Bill of Material</span>
+                            <span class="skill-tag security">AI Security</span>
+                            <span class="skill-tag security">Web Security</span>
+                            <span class="skill-tag security">Mobile App Security</span>
+                            <span class="skill-tag security">OWASP Top 10</span>
+                            <span class="skill-tag security">SonarQube</span>
+                            <span class="skill-tag security">Ethical Hacking</span>
+                            <span class="skill-tag security">PMD</span>
+                            <span class="skill-tag security">FindBugs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role Cards -->
+                <div class="role-cards">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>Architect</h3>
+                        <p>Architecture decision, System Design, Release, Automation,
+                            Migration,
+                            Code refactor, Performance optimization, SAFe Agile, AI</p>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Developer</h3>
+                        <p>AI Apps, Microservices, Rest API, Kafka, AWS, Kubernetes, Docker, Kong, Python, Innovation
+                        </p>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>DevOps and SRE</h3>
+                        <p>Observability, Splunk, DevOps, Monitoring, Scripting, IaC, Jenkins, Gitlab, SLA/SLO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Skills Section -->
+        <section id="past-skills" class="skills-page past-skills">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="section-title" data-translate="section-past-skills">Past Skills</h2>
+                    <p class="page-subtitle">Frontend, PHP large scale Apps, Live Streaming, Smart TV Apps and
+                        Android/iOS
+                        Mobile Apps</p>
+                </div>
+
+                <div class="skills-categories">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag programming">PHP</span>
+                            <span class="skill-tag programming">JavaScript</span>
+                            <span class="skill-tag programming">TypeScript</span>
+                        </div>
+                    </div>
+
+                    <!-- IoT and Connectivity -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-wifi"></i>
+                            <h3>IoT and Connectivity</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag iot">MQTT</span>
+                            <span class="skill-tag iot">CoAP</span>
+                            <span class="skill-tag iot">LwM2M</span>
+                            <span class="skill-tag iot">HTTP</span>
+                            <span class="skill-tag iot">Sensor Device Management</span>
+                            <span class="skill-tag iot">SOTA</span>
+                            <span class="skill-tag iot">FOTA</span>
+                            <span class="skill-tag iot">Multi Tenant Architecture</span>
+                            <span class="skill-tag iot">Usage metrics</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Apps -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Apps</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag mobile">Ionic Framework</span>
+                            <span class="skill-tag mobile">Android/iOS Hybrid Apps</span>
+                            <span class="skill-tag mobile">iPad/Tablet Apps</span>
+                            <span class="skill-tag mobile">Playstore</span>
+                            <span class="skill-tag mobile">Apple App store</span>
+                            <span class="skill-tag mobile">Wireframe</span>
+                            <span class="skill-tag mobile">Apple TV</span>
+                            <span class="skill-tag mobile">Code obfuscation</span>
+                            <span class="skill-tag mobile">SQLite</span>
+                            <span class="skill-tag mobile">Debugging</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-desktop"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag frontend">AngularJS</span>
+                            <span class="skill-tag frontend">Angular</span>
+                            <span class="skill-tag frontend">WebApp performance</span>
+                            <span class="skill-tag frontend">Responsive web design</span>
+                            <span class="skill-tag frontend">CDN</span>
+                            <span class="skill-tag frontend">Code obfuscation</span>
+                            <span class="skill-tag frontend">WebApp security</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag backend">FFMpeg</span>
+                            <span class="skill-tag backend">PHP</span>
+                            <span class="skill-tag backend">NodeJS</span>
+                            <span class="skill-tag backend">Wordpress</span>
+                            <span class="skill-tag backend">Web-Socket</span>
+                            <span class="skill-tag backend">Firebase</span>
+                            <span class="skill-tag backend">Digital Ocean</span>
+                            <span class="skill-tag backend">SQL Server</span>
+                            <span class="skill-tag backend">FTP server</span>
+                            <span class="skill-tag backend">SMTP</span>
+                            <span class="skill-tag backend">SMS, IVRS</span>
+                            <span class="skill-tag backend">firebug</span>
+                            <span class="skill-tag backend">SQL-Server</span>
+                            <span class="skill-tag backend">WAMP</span>
+                            <span class="skill-tag backend">Stored Procedure</span>
+                            <span class="skill-tag backend">HLS / RTMP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Past Role Cards -->
+                <div class="role-cards">
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <p>PHP, NodeJS, Rest APIs, Web-Socket, SQL Server, MySQL, Postgres, MVC</p>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <p>Angular 1.x, HTML, CSS, UX, Optimization, JavaScript, jQuery, Single page Apps</p>
+                    </div>
+                    <div class="role-card">
+                        <div class="role-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>System Design & Study</h3>
+                        <p>System Study, HLD, LLD, DB Design, DB optimization, Lead Team</p>
+                    </div>
+                </div>
+
+                <!-- Experience Timeline for Past Skills -->
+                <div class="past-experience">
+                    <h2 class="section-title">Experience with Past Skills</h2>
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile App Development</h3>
+                            <p>Built hybrid mobile applications using Ionic Framework for both Android and iOS
+                                platforms.
+                                Published apps on Google Play Store and Apple App Store with focus on performance
+                                optimization and user experience.</p>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h3>IoT Solutions</h3>
+                            <p>Developed IoT connectivity solutions using MQTT, CoAP, and LwM2M protocols. Implemented
+                                device management systems with SOTA/FOTA capabilities and multi-tenant architecture for
+                                scalable IoT platforms.</p>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3>Live Streaming</h3>
+                            <p>Built live streaming platforms using FFMpeg, HLS/RTMP protocols. Developed Smart TV
+                                applications and video processing solutions for large-scale streaming services.</p>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>Created large-scale web applications using PHP, Angular 1.x/2.x, and NodeJS. Focused on
+                                performance optimization, security, and scalable architecture patterns.</p>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h3>Data Migration & ETL</h3>
+                            <p>Built comprehensive solutions to migrate large-scale data from legacy systems to modern
+                                on-premises and cloud environments. Helped enterprises transition from paper-based
+                                processes to digital systems, ensuring data integrity and minimal downtime during
+                                migration.</p>
+                        </div>
+                        <div class="experience-card">
+                            <div class="experience-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Security - Web & Mobile</h3>
+                            <p>Developed secure web and mobile applications protected against common security attacks.
+                                Collaborated with external vendors for comprehensive security audits and implemented
+                                robust security measures for payment gateway integrations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience" itemscope itemtype="https://schema.org/WorkHistory">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-summary">
+                    <p data-experience-text>16+ years of progressive experience from startup engineer to Solution
+                        Architect, leading teams
+                        and building enterprise-scale solutions.</p>
+                </div>
+
+                <div class="timeline-compact">
+                    <div class="timeline-item-compact">
+                        <div class="timeline-dot-compact"></div>
+                        <div class="timeline-content-compact">
+                            <div class="timeline-header">
+                                <h3>Solution Architect</h3>
+                                <span class="company">Airbus</span>
+                                <span class="timeline-date">2023 - Present</span>
+                            </div>
+                            <p>Leading AWS DataLake, LLM-based agents, FinOps, and Data Governance. Driving 10 Scrum
+                                Teams with SAFe agile practices.</p>
+                            <div class="key-highlights">
+                                <span class="highlight-tag">LLM and AI</span>
+                                <span class="highlight-tag">DataLake on AWS</span>
+                                <span class="highlight-tag">Foundry</span>
+                                <span class="highlight-tag">FinOps</span>
+                                <span class="highlight-tag">8 Scrum Teams</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item-compact">
+                        <div class="timeline-dot-compact"></div>
+                        <div class="timeline-content-compact">
+                            <div class="timeline-header">
+                                <h3>Software Architect</h3>
+                                <span class="company">Ericsson</span>
+                                <span class="timeline-date">2016 - 2023</span>
+                            </div>
+                            <p>IoT Platform, Enterprise DevOps pipelines, microservices architecture, cloud-native
+                                solutions. Jenkins,
+                                Kubernetes, Docker, AWS/Azure deployment.</p>
+                            <div class="key-highlights">
+                                <span class="highlight-tag">IoT Platform</span>
+                                <span class="highlight-tag">Platform Engineering</span>
+                                <span class="highlight-tag">DevOps Pipelines</span>
+                                <span class="highlight-tag">Microservices</span>
+                                <span class="highlight-tag">Kubernetes</span>
+                                <span class="highlight-tag">Cloud Native</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item-compact">
+                        <div class="timeline-dot-compact"></div>
+                        <div class="timeline-content-compact">
+                            <div class="timeline-header">
+                                <h3>Tech Lead</h3>
+                                <span class="company">Technology Companies</span>
+                                <span class="timeline-date">2014 - 2016</span>
+                            </div>
+                            <p>Lead 10+ engineers, architected large-scale applications, established coding standards
+                                and
+                                development processes.</p>
+                            <div class="key-highlights">
+                                <span class="highlight-tag">Team Leadership</span>
+                                <span class="highlight-tag">Architecture</span>
+                                <span class="highlight-tag">Mentorship</span>
+                                <span class="highlight-tag">EU and US Customers</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item-compact">
+                        <div class="timeline-dot-compact"></div>
+                        <div class="timeline-content-compact">
+                            <div class="timeline-header">
+                                <h3>Senior Engineer</h3>
+                                <span class="company">Startup Companies</span>
+                                <span class="timeline-date">2010 - 2014</span>
+                            </div>
+                            <p>Full-stack development across IoT, Telecom, Banking, Healthcare. Mobile apps, live
+                                streaming, system design.</p>
+                            <div class="key-highlights">
+                                <span class="highlight-tag">IoT Solutions</span>
+                                <span class="highlight-tag">Mobile Apps</span>
+                                <span class="highlight-tag">Live Streaming</span>
+                                <span class="highlight-tag">Banking</span>
+                                <span class="highlight-tag">eGov</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item-compact">
+                        <div class="timeline-dot-compact"></div>
+                        <div class="timeline-content-compact">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="company">Startup Companies</span>
+                                <span class="timeline-date">2009 - 2010</span>
+                            </div>
+                            <p>Started career in startup environment, web applications, PHP/JavaScript development,
+                                agile methodologies.</p>
+                            <div class="key-highlights">
+                                <span class="highlight-tag">Web Development</span>
+                                <span class="highlight-tag">Startup Experience</span>
+                                <span class="highlight-tag">Techie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="projects-intro">Here are some of the key projects I've architected and developed, showcasing
+                    my expertise in mobile applications, streaming platforms, and enterprise solutions.</p>
+
+                <div class="projects-grid">
+                    <!-- Project 1: kWallet -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>kWallet - Smart Shopping Mobile App</h3>
+                            <div class="project-category">Mobile Application • Italy Market</div>
+                            <p>A comprehensive mobile shopping application for Android and iOS platforms, designed for
+                                Italian supermarket customers. The app enables users to prepare their shopping carts
+                                before visiting stores, integrating beacon technology for location-based offers and
+                                featuring built-in payment gateway systems.</p>
+
+                            <div class="project-features">
+                                <h4>Key Features & Solutions:</h4>
+                                <ul>
+                                    <li><strong>Pre-Shopping Cart Management:</strong> Users can prepare shopping lists
+                                        and carts before visiting supermarkets</li>
+                                    <li><strong>Beacon Integration:</strong> Real-time location-based offers and
+                                        promotions delivered via beacon technology</li>
+                                    <li><strong>Marketing Advertisement Module:</strong> Built-in advertising system for
+                                        targeted promotions</li>
+                                    <li><strong>Integrated Payment Gateway:</strong> Secure payment processing for
+                                        seamless transactions</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Ionic Framework</span>
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">iOS</span>
+                                <span class="tech-tag">Beacon Technology</span>
+                                <span class="tech-tag">Payment Gateway</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+
+                            <div class="project-impact">
+                                <span class="impact-badge">🇮🇹 Italian Market</span>
+                                <span class="impact-badge">📱 Cross-Platform</span>
+                                <span class="impact-badge">🛒 E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Webcertain TV -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Webcertain TV - Live Streaming Platform</h3>
+                            <div class="project-category">Video Streaming Platform • 24/7 Operations</div>
+                            <p>A comprehensive video streaming platform delivering 24/7 live news and on-demand video
+                                content. Built to provide users with the latest video content to stay updated with
+                                current events and trending topics through modern web technologies and CDN integration.
+                            </p>
+
+                            <div class="project-features">
+                                <h4>Key Features & Solutions:</h4>
+                                <ul>
+                                    <li><strong>24/7 Live Streaming:</strong> Continuous news and video content delivery
+                                    </li>
+                                    <li><strong>On-Demand Video Library:</strong> Extensive catalog of archived content
+                                    </li>
+                                    <li><strong>Real-Time Content Delivery:</strong> Low-latency streaming using WebRTC
+                                        technology</li>
+                                    <li><strong>Digital Marketing Integration:</strong> Built-in advertising and
+                                        marketing modules</li>
+                                    <li><strong>Scalable Architecture:</strong> CDN integration for global content
+                                        delivery</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">WebRTC</span>
+                                <span class="tech-tag">Akamai CDN</span>
+                                <span class="tech-tag">Live Streaming</span>
+                                <span class="tech-tag">Digital Marketing</span>
+                                <span class="tech-tag">Modern Web</span>
+                                <span class="tech-tag">Video Processing</span>
+                                <span class="tech-tag">Content Management</span>
+                            </div>
+
+                            <div class="project-impact">
+                                <span class="impact-badge">📺 24/7 Live</span>
+                                <span class="impact-badge">🌐 Global CDN</span>
+                                <span class="impact-badge">📰 News Platform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: InFlight Entertainment -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>InFlight Entertainment System</h3>
+                            <div class="project-category">Aviation Technology • Enterprise Solution</div>
+                            <p>A comprehensive in-flight entertainment system designed for deployment on aircraft local
+                                area networks. The application provides passengers with movies, videos, music, games,
+                                and social interaction capabilities during flights, successfully deployed across
+                                American and European airlines.</p>
+
+                            <div class="project-features">
+                                <h4>Key Features & Solutions:</h4>
+                                <ul>
+                                    <li><strong>Local Network Deployment:</strong> Runs entirely on aircraft LAN without
+                                        internet dependency</li>
+                                    <li><strong>Multi-Media Entertainment:</strong> Movies, videos, music, and
+                                        interactive games</li>
+                                    <li><strong>Passenger Communication:</strong> In-flight chat system for passenger
+                                        interaction</li>
+                                    <li><strong>Offline Capability:</strong> Full functionality without external
+                                        internet connection</li>
+                                    <li><strong>Multi-Airline Deployment:</strong> Successfully implemented across 3
+                                        major airlines</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">Local Area Network</span>
+                                <span class="tech-tag">Offline Applications</span>
+                                <span class="tech-tag">Media Streaming</span>
+                                <span class="tech-tag">Real-time Chat</span>
+                                <span class="tech-tag">Gaming Platform</span>
+                                <span class="tech-tag">Aviation Systems</span>
+                                <span class="tech-tag">Enterprise Deployment</span>
+                            </div>
+
+                            <div class="project-impact">
+                                <span class="impact-badge">✈️ 3 Airlines</span>
+                                <span class="impact-badge">🌍 US & Europe</span>
+                                <span class="impact-badge">🎮 Entertainment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: MIS - Master Information System -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>MIS - Master Information System</h3>
+                            <div class="project-category">eGovernment Platform • Digital Transformation</div>
+                            <p>A comprehensive digital transformation project migrating manual eGovernment processes to
+                                a digital platform serving 100,000+ users across India. The system provides monetary
+                                benefits through a robust digital platform with both offline and online capabilities,
+                                ensuring accessibility in remote areas without internet connectivity.</p>
+
+                            <div class="project-features">
+                                <h4>Key Features & Solutions:</h4>
+                                <ul>
+                                    <li><strong>Digital Transformation:</strong> Migrated completely manual,
+                                        non-digitized processes to fully digital workflows</li>
+                                    <li><strong>Hybrid Architecture:</strong> Offline and online modules with seamless
+                                        data synchronization</li>
+                                    <li><strong>Image Processing Integration:</strong> Automated document processing and
+                                        validation using advanced image processing techniques</li>
+                                    <li><strong>Corporate Banking Integration:</strong> Secure payment dispatch system
+                                        integrated with banking infrastructure</li>
+                                    <li><strong>Multi-Level BI Reporting:</strong> Comprehensive reporting at division,
+                                        block, and district levels using business intelligence tools</li>
+                                    <li><strong>Remote Accessibility:</strong> Designed to function in areas with
+                                        limited or no internet connectivity</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Image Processing</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Data Synchronization</span>
+                                <span class="tech-tag">Data Migration</span>
+                                <span class="tech-tag">BI Tools</span>
+                                <span class="tech-tag">Security Audit</span>
+                                <span class="tech-tag">High Availability</span>
+                                <span class="tech-tag">Corporate Banking</span>
+                            </div>
+
+                            <div class="project-impact">
+                                <span class="impact-badge">🇮🇳 100K+ Users</span>
+                                <span class="impact-badge">🏛️ eGovernment</span>
+                                <span class="impact-badge">💰 Financial Benefits</span>
+                                <span class="impact-badge">📊 Multi-Level BI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-translate="contact-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 data-translate="contact-subtitle">Let's work together</h3>
+                        <p data-translate="contact-description">I'm always interested in discussing new opportunities,
+                            innovative projects, and ways to create
+                            impactful software solutions.</p>
+                        <div class="contact-links">
+                            <a href="mailto:bikashkumars@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>bikashkumars@gmail.com</span>
+                            </a>
+                            <a href="https://linkedin.com/in/bikashkumars" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/bikashkumars" class="contact-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" data-translate-placeholder="form-name"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" data-translate-placeholder="form-email"
+                                placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" data-translate-placeholder="form-message"
+                                placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-translate="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Bikash Sundaray. All rights reserved.</p>
+                <div class="footer-credits">
+                    <p class="credits-text">Built with ❤️ using:</p>
+                    <div class="credits-links">
+                        <a href="https://kiro.dev" target="_blank" rel="noopener noreferrer" class="credit-link">
+                            <i class="fas fa-robot"></i>
+                            Amazon Kiro IDE
+                        </a>
+                        <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer"
+                            class="credit-link">
+                            <i class="fas fa-font"></i>
+                            Google Fonts
+                        </a>
+                        <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer" class="credit-link">
+                            <i class="fas fa-icons"></i>
+                            Font Awesome
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </footer>
 
-  <!-- The prevskil Section -->
-  <div class="w3-blue" id="prevskil">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Past Skill</h2>
-      <p class="w3-opacity w3-center"><i>Frontend, Php large scale Apps, Live Streaming, Smart TV Apps and Android/iOS Mobile Apps</i></p><br>
+    <script src="script.js"></script>
 
-      <ul class="boxEffect w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Programming Language 
-        	<span class="w3-tag w3-khaki w3-margin-left w3-margin-top">PHP</span>
-          <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">JavaScript</span>
-          <span class="w3-tag w3-khaki w3-margin-left w3-margin-top">TypeScript</span>
-        </li>
-	<li class="w3-padding">IoT and Connectivity
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">MQTT</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Coap</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">LwM2M</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Http</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Sensor Device Management</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">SOTA</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">FOTA</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Multi Tenant Architecture</span>
-            <span class="w3-tag text-aqua w3-margin-left w3-margin-top">Usage metrics</span>
-        </li>
-        <li class="w3-padding">Mobile Apps 
-        	<span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Ionic Framework</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Android/iOS Hybrid Apps</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">iPad/Tablet Apps</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Playstore</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Apple App store</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Wireframe</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Apple TV</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Code obfuscation</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">SQLite</span>
-            <span class="w3-tag w3-blue-grey w3-margin-left w3-margin-top">Debugging</span>
-        </li>
-        <li class="w3-padding">Fronend 
-        	<span class="w3-tag w3-teal w3-margin-left w3-margin-top">Angular 1.x</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Angular 2.x </span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">UX and WebApp performance</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Chrome debugging</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">CDN</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">Code obfuscation</span>
-            <span class="w3-tag w3-teal w3-margin-left w3-margin-top">WebApp security</span>
-        <li class="w3-padding">Backend 
-        	<span class="w3-tag w3-purple w3-margin-left w3-margin-top">FFMpeg</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">PHP</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">NodeJS</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Wordpress</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Web-Socket</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Firebase</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Digital Ocean</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">SQL Server</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">FTP server</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">SMTP</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">SMS, IVRS</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">firebug</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">SQL-Server</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">WAMP</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">Stored Procedure</span>
-            <span class="w3-tag w3-purple w3-margin-left w3-margin-top">HLS / RTMP</span>
-      </ul>
+    <!-- Performance and Analytics -->
+    <script>
+        // Preload critical resources
+        const preloadLink = document.createElement('link');
+        preloadLink.rel = 'preload';
+        preloadLink.href = 'profile-photo.jpg';
+        preloadLink.as = 'image';
+        document.head.appendChild(preloadLink);
 
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-white">
-            <p><b>Backend</b></p>
-            <p>Php, NodeJS, Rest APIs, Web-Socket, SQL Server, Mysql, Postgres, MVC</p>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-white">
-            <p><b>Frontend</b></p>
-            <p>Angular 1.x, HTML, CSS, UX, Optimization, JavaScript, JQuery, Single page Aps</p>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <div class="w3-container w3-white">
-            <p><b>Sys. Design & Study</b></p>
-            <p>System Study, HLD, LLD, DB Design, DB optmization, Lead Team</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        // Add loading="lazy" to images below the fold
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('img:not(.profile-photo)');
+            images.forEach(img => {
+                img.loading = 'lazy';
+            });
+        });
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">Contact</h2>
-    <p class="w3-opacity w3-center"><i>Tech Talk, Opportunity, Consulting </i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Bangalore, India<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: Check my LinkedIn<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: bikashkumars (AT) gmail (DOT) com<br>
-        <br /><br />
-        I do help developers on Cloud Native, Product Management, Software Development, Tech Book Review and Conference
-         <br>
-      </div>
-      <div class="w3-col m6">
-        <img src="images/bikashkumars_400x400.jpeg" class="imgEffet" height="200px" width="200px"  />
-      </div>
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
-
-<div id="bottomAni" style="max-width:100%">
-  <div class="w3-container w3-content w3-padding-64" style="max-width:100%">
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.linkedin.com/in/bikashkumars/" target="_blank"><i class="fa fa-linkedin">&nbsp;</i></a>
-  <a href="https://twitter.com/bikashkumars" target="_blank"><i class="fa fa-twitter">&nbsp;</i></a>
-  <a href="https://medium.com/@bikashkumars" target="_blank"><i class="fa fa-medium">&nbsp;</i></a>
-</footer>
-
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
+        // Service Worker for caching (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+    </script>
 </body>
+
 </html>
