@@ -1603,23 +1603,23 @@ section {
 }
 
 .skill-tag.data {
-    background: #d1fae5;
-    color: #065f46;
+    background: #dbeafe;
+    color: #1e40af;
 }
 
 .skill-tag.framework {
-    background: #fce7f3;
-    color: #be185d;
-}
-
-.skill-tag.database {
     background: #e0e7ff;
     color: #3730a3;
 }
 
+.skill-tag.database {
+    background: #fef3c7;
+    color: #92400e;
+}
+
 .skill-tag.ml {
-    background: #fed7d7;
-    color: #c53030;
+    background: #d1fae5;
+    color: #065f46;
 }
 
 .skill-tag.cloud {
