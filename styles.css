@@ -465,13 +465,20 @@ section {
 /* Small Audio Player Styles */
 .audio-player-small {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     gap: 0.75rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
     background: rgba(99, 102, 241, 0.05);
     border-left: 3px solid var(--primary-color);
     border-radius: 0.5rem;
+}
+
+.audio-player-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    width: 100%;
 }
 
 .audio-play-btn-small {
@@ -511,8 +518,8 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: 0.5rem;
     width: 100%;
+    margin-top: 0.25rem;
 }
 
 .audio-progress-small {
@@ -1393,9 +1400,14 @@ section {
     }
     
     .audio-player-small {
-        flex-direction: column;
         gap: 0.5rem;
         padding: 0.75rem;
+    }
+    
+    .audio-player-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
     }
     
     .audio-description {

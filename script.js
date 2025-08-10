@@ -432,95 +432,130 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-// Audi
-o Player Functionality
+// Temporary Audio Player with Development Message
 document.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('aboutMeAudio');
     const playBtn = document.getElementById('audioPlayBtn');
     const playIcon = document.getElementById('playIcon');
     const audioControls = document.getElementById('audioControls');
     const progressBar = document.getElementById('audioProgress');
-    const progressContainer = document.querySelector('.audio-progress-bar-small');
     const currentTimeSpan = document.getElementById('currentTime');
     const totalTimeSpan = document.getElementById('totalTime');
-    // Removed volume slider for small player
 
     let isPlaying = false;
+    let speechSynthesis = window.speechSynthesis;
+    let currentUtterance = null;
+    let progressInterval = null;
+
+    // Development message
+    const developmentMessage = "Hello! This is a temporary audio feature. The full 'About Me' audio in my own voice is currently under development and will be available soon. Thank you for your patience!";
 
     // Initialize audio player
-    if (audio) {
-        // Set initial volume
-        audio.volume = 0.7;
-
+    if (playBtn) {
         // Play/Pause functionality
         playBtn.addEventListener('click', () => {
             if (isPlaying) {
-                audio.pause();
+                stopSpeech();
             } else {
-                audio.play();
+                playSpeech();
             }
         });
 
-        // Audio play event
-        audio.addEventListener('play', () => {
-            isPlaying = true;
-            playIcon.className = 'fas fa-pause';
-            audioControls.style.display = 'flex';
-        });
+        function playSpeech() {
+            if (speechSynthesis) {
+                // Stop any ongoing speech
+                speechSynthesis.cancel();
+                
+                // Create utterance
+                currentUtterance = new SpeechSynthesisUtterance(developmentMessage);
+                
+                // Configure voice settings
+                currentUtterance.rate = 0.9;
+                currentUtterance.pitch = 1;
+                currentUtterance.volume = 0.8;
+                
+                // Try to use a more natural voice
+                const voices = speechSynthesis.getVoices();
+                const preferredVoice = voices.find(voice => 
+                    voice.name.includes('Google') || 
+                    voice.name.includes('Microsoft') ||
+                    voice.name.includes('Alex') ||
+                    voice.name.includes('Samantha')
+                ) || voices[0];
+                
+                if (preferredVoice) {
+                    currentUtterance.voice = preferredVoice;
+                }
 
-        // Audio pause event
-        audio.addEventListener('pause', () => {
+                // Event handlers
+                currentUtterance.onstart = () => {
+                    isPlaying = true;
+                    playIcon.className = 'fas fa-pause';
+                    audioControls.style.display = 'flex';
+                    startProgressSimulation();
+                };
+
+                currentUtterance.onend = () => {
+                    stopSpeech();
+                };
+
+                currentUtterance.onerror = () => {
+                    stopSpeech();
+                    console.log('Audio feature is under development. Speech synthesis not available.');
+                };
+
+                // Start speaking
+                speechSynthesis.speak(currentUtterance);
+            } else {
+                console.log('Speech synthesis not supported in this browser.');
+            }
+        }
+
+        function stopSpeech() {
+            if (speechSynthesis) {
+                speechSynthesis.cancel();
+            }
             isPlaying = false;
             playIcon.className = 'fas fa-play';
-        });
-
-        // Audio ended event
-        audio.addEventListener('ended', () => {
-            isPlaying = false;
-            playIcon.className = 'fas fa-play';
-            progressBar.style.width = '0%';
             audioControls.style.display = 'none';
-        });
+            progressBar.style.width = '0%';
+            clearInterval(progressInterval);
+        }
 
-        // Update progress bar and time
-        audio.addEventListener('timeupdate', () => {
-            if (audio.duration) {
-                const progress = (audio.currentTime / audio.duration) * 100;
-                progressBar.style.width = progress + '%';
+        function startProgressSimulation() {
+            // Simulate progress for approximately 15 seconds (estimated speech duration)
+            const duration = 15;
+            let currentTime = 0;
+            
+            totalTimeSpan.textContent = formatTime(duration);
+            currentTimeSpan.textContent = formatTime(0);
+            
+            progressInterval = setInterval(() => {
+                if (currentTime >= duration || !isPlaying) {
+                    clearInterval(progressInterval);
+                    return;
+                }
+                
+                currentTime += 0.1;
+                const progress = (currentTime / duration) * 100;
+                progressBar.style.width = Math.min(progress, 100) + '%';
+                currentTimeSpan.textContent = formatTime(currentTime);
+            }, 100);
+        }
 
-                currentTimeSpan.textContent = formatTime(audio.currentTime);
-                totalTimeSpan.textContent = formatTime(audio.duration);
-            }
-        });
 
-        // Load metadata to get duration
-        audio.addEventListener('loadedmetadata', () => {
-            totalTimeSpan.textContent = formatTime(audio.duration);
-        });
 
-        // Progress bar click functionality
-        progressContainer.addEventListener('click', (e) => {
-            if (audio.duration) {
-                const rect = progressContainer.getBoundingClientRect();
-                const clickX = e.clientX - rect.left;
-                const width = rect.width;
-                const clickTime = (clickX / width) * audio.duration;
-                audio.currentTime = clickTime;
-            }
-        });
-
-        // Error handling
-        audio.addEventListener('error', (e) => {
-            console.error('Audio error:', e);
-            playBtn.disabled = true;
-            playBtn.style.opacity = '0.5';
-        });
+        // Load voices when available
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = () => {
+                // Voices loaded, ready to use
+            };
+        }
     }
 
     // Format time helper function
     function formatTime(seconds) {
         if (isNaN(seconds)) return '0:00';
-
+        
         const minutes = Math.floor(seconds / 60);
         const remainingSeconds = Math.floor(seconds % 60);
         return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;

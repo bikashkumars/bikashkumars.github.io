@@ -263,127 +263,147 @@
 
         <!-- About Section -->
         <section id="about" class="about" itemscope itemtype="https://schema.org/AboutPage">
-        <div class="container">
-            <h2 class="section-title" data-translate="section-about">About Me</h2>
-            <div class="about-content">
-                <div class="about-main">
-                    <div class="about-text">
-                        <!-- Small Audio Player -->
-                        <div class="audio-player-small">
-                            <button class="audio-play-btn-small" id="audioPlayBtn" aria-label="Play About Me Audio">
-                                <i class="fas fa-play" id="playIcon"></i>
-                            </button>
-                            <span class="audio-description">Click here to play and listen about me in my own voice by clicking this button</span>
-                            <div class="audio-controls-small" id="audioControls" style="display: none;">
-                                <div class="audio-progress-small">
-                                    <div class="audio-progress-bar-small">
-                                        <div class="audio-progress" id="audioProgress"></div>
+            <div class="container">
+                <h2 class="section-title" data-translate="section-about">About Me</h2>
+                <div class="about-content">
+                    <div class="about-main">
+                        <div class="about-text">
+                            <!-- Small Audio Player -->
+                            <div class="audio-player-small">
+                                <div class="audio-player-header">
+                                    <button class="audio-play-btn-small" id="audioPlayBtn"
+                                        aria-label="Play About Me Audio">
+                                        <i class="fas fa-play" id="playIcon"></i>
+                                    </button>
+                                    <span class="audio-description">Click here to play and listen about me in my own
+                                        voice by clicking this button</span>
+                                </div>
+                                <div class="audio-controls-small" id="audioControls" style="display: none;">
+                                    <div class="audio-progress-small">
+                                        <div class="audio-progress-bar-small">
+                                            <div class="audio-progress" id="audioProgress"></div>
+                                        </div>
+                                        <span class="audio-time-small">
+                                            <span id="currentTime">0:00</span>/<span id="totalTime">0:00</span>
+                                        </span>
                                     </div>
-                                    <span class="audio-time-small">
-                                        <span id="currentTime">0:00</span>/<span id="totalTime">0:00</span>
-                                    </span>
+                                </div>
+                                <!-- Temporary: No audio file needed for development message -->
+                                <audio id="aboutMeAudio" preload="none">
+                                    <!-- Audio will be generated programmatically -->
+                                </audio>
+                            </div>
+                            <p>
+                                I am currently working as a <strong>Solution Architect</strong> at
+                                <strong>Airbus</strong>,
+                                leading end-to-end product development and deployment. With <strong
+                                    data-experience-text>16+
+                                    years of
+                                    experience</strong>
+                                in Scalable Systems, Cloud Native, Micro-Services, Big Data, OpenSource LLM models,
+                                Machine
+                                Learning, building large-scale products, Enterprise-grade DevOps practices, driving 10
+                                Scrum
+                                Teams, Security, and Database management.
+                            </p>
+                            <p>
+                                I am passionate about what I do and what I build. Currently, I'm building data pipelines
+                                using
+                                AWS DataLake and opensource tools, managing cloud costs using FinOps, and implementing
+                                Data
+                                Governance. I'm also building LLM-based agents using ollma, LangChain, and Splunk to
+                                monitor
+                                data
+                                pipelines.
+                            </p>
+                            <p>
+                                As part of my role, I design new features, conduct system studies, participate in
+                                solution
+                                trains, and improve DevOps pipelines. I actively practice and implement microservices,
+                                API
+                                gateways, cloud-native architecture, REST APIs, Java design patterns, and Python design
+                                patterns in my day-to-day work.
+                            </p>
+                            <p>
+                                I lead Communities of Practice (CoP) and Guilds for several service streams within our
+                                product and play an active role in SAFe agile PI planning and program backlog
+                                refinement,
+                                working
+                                collaboratively with multiple scrum teams on design and development.
+                            </p>
+                        </div>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Current Role</h4>
+                                    <p>Solution Architect at Airbus</p>
                                 </div>
                             </div>
-                            <audio id="aboutMeAudio" preload="metadata">
-                                <source src="about-me-audio.mp3" type="audio/mpeg">
-                                <source src="about-me-audio.ogg" type="audio/ogg">
-                                <source src="about-me-audio.wav" type="audio/wav">
-                                Your browser does not support the audio element.
-                            </audio>
-                        </div>
-                        <p>
-                            I am currently working as a <strong>Solution Architect</strong> at <strong>Airbus</strong>,
-                            leading end-to-end product development and deployment. With <strong data-experience-text>16+
-                                years of
-                                experience</strong>
-                            in Scalable Systems, Cloud Native, Micro-Services, Big Data, OpenSource LLM models, Machine
-                            Learning, building large-scale products, Enterprise-grade DevOps practices, driving 10 Scrum
-                            Teams, Security, and Database management.
-                        </p>
-                        <p>
-                            I am passionate about what I do and what I build. Currently, I'm building data pipelines
-                            using
-                            AWS DataLake and opensource tools, managing cloud costs using FinOps, and implementing Data
-                            Governance. I'm also building LLM-based agents using ollma, LangChain, and Splunk to monitor
-                            data
-                            pipelines.
-                        </p>
-                        <p>
-                            As part of my role, I design new features, conduct system studies, participate in solution
-                            trains, and improve DevOps pipelines. I actively practice and implement microservices, API
-                            gateways, cloud-native architecture, REST APIs, Java design patterns, and Python design
-                            patterns in my day-to-day work.
-                        </p>
-                        <p>
-                            I lead Communities of Practice (CoP) and Guilds for several service streams within our
-                            product and play an active role in SAFe agile PI planning and program backlog refinement,
-                            working
-                            collaboratively with multiple scrum teams on design and development.
-                        </p>
-                    </div>
-
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-briefcase"></i>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Experience</h4>
+                                    <p data-experience-years>16+ years in Software Architecture</p>
+                                </div>
                             </div>
-                            <div class="highlight-content">
-                                <h4>Current Role</h4>
-                                <p>Solution Architect at Airbus</p>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Leadership</h4>
+                                    <p>Driving 10 Scrum Teams</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-calendar-alt"></i>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>Data Focus</h4>
+                                    <p>Data Engineering and Analytics</p>
+                                </div>
                             </div>
-                            <div class="highlight-content">
-                                <h4>Experience</h4>
-                                <p data-experience-years>16+ years in Software Architecture</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Leadership</h4>
-                                <p>Driving 10 Scrum Teams</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="highlight-content">
-                                <h4>Data and AI Focus</h4>
-                                <p>LLM Agents & Data Pipelines</p>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4>AI Focus</h4>
+                                    <p>LLM Agents & MLOps</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="about-skills">
-                    <h3>Core Expertise</h3>
-                    <div class="skills-flow">
-                        <span class="skill-badge primary">Solution Architecture</span>
-                        <span class="skill-badge accent">Data Engineering</span>
-                        <span class="skill-badge primary">AI Engineering</span>
-                        <span class="skill-badge secondary">Java</span>
-                        <span class="skill-badge accent">Python</span>
-                        <span class="skill-badge secondary">AWS Cloud DataLake</span>
-                        <span class="skill-badge primary">FinOps</span>
-                        <span class="skill-badge accent">LangChain AI Agents</span>
-                        <span class="skill-badge secondary">Apache Iceberg</span>
-                        <span class="skill-badge primary">Microservices</span>
-                        <span class="skill-badge accent">Open LLM Models</span>
-                        <span class="skill-badge primary">Cloud Native Apps</span>
-                        <span class="skill-badge accent">Splunk</span>
-                        <span class="skill-badge secondary">DevOps</span>
-                        <span class="skill-badge accent">Web and AI Security</span>
+                    <div class="about-skills">
+                        <h3>Core Expertise</h3>
+                        <div class="skills-flow">
+                            <span class="skill-badge primary">Solution Architecture</span>
+                            <span class="skill-badge accent">Data Engineering</span>
+                            <span class="skill-badge primary">AI Engineering</span>
+                            <span class="skill-badge secondary">Java</span>
+                            <span class="skill-badge accent">Python</span>
+                            <span class="skill-badge secondary">AWS Cloud DataLake</span>
+                            <span class="skill-badge primary">FinOps</span>
+                            <span class="skill-badge accent">LangChain AI Agents</span>
+                            <span class="skill-badge secondary">Apache Iceberg</span>
+                            <span class="skill-badge primary">Microservices</span>
+                            <span class="skill-badge accent">Open LLM Models</span>
+                            <span class="skill-badge primary">Cloud Native Apps</span>
+                            <span class="skill-badge accent">Splunk</span>
+                            <span class="skill-badge secondary">DevOps</span>
+                            <span class="skill-badge accent">Web and AI Security</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
 
         <!-- Skills Section -->
@@ -806,7 +826,7 @@
                             <i class="fas fa-palette"></i>
                         </div>
                         <h3>Frontend</h3>
-                        <p>Angular 1.x, HTML, CSS, UX, Optimization, JavaScript, jQuery, Single page Apps</p>
+                        <p>AngularJS, HTML, CSS, UX, Optimization, JavaScript, jQuery, Single page Apps</p>
                     </div>
                     <div class="role-card">
                         <div class="role-icon">
