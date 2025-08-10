@@ -26,7 +26,7 @@
         content="Solution Architect at Airbus with expertise in AWS, LLM, AI/ML, Cloud Native architecture, Data Engineering, FinOps, and leading enterprise-scale development teams. Interactive portfolio with audio biography and multi-language support (English, French, Italian, Hindi). Building LLM-based agents using ollama, LangChain, and Splunk for data pipeline monitoring.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bikashkumars.github.io/">
-    <meta property="og:image" content="https://bikashkumars.github.io/profile-photo.jpg">
+    <meta property="og:image" content="https://bikashkumars.github.io/bikash.png">
     <meta property="og:image:alt"
         content="Bikash Kumar Sundaray - Solution Architect at Airbus with 16+ years experience">
     <meta property="og:site_name" content="Bikash Kumar Sundaray Interactive Portfolio">
@@ -41,7 +41,7 @@
     <meta name="twitter:description"
         content="16+ years experience in Solution Architecture, AWS, LLM, AI/ML, Data Engineering, and enterprise software development. Interactive portfolio with audio biography, multi-language support, and modern responsive design. Building LLM-based agents using ollama & LangChain."
         data-experience-text>
-    <meta name="twitter:image" content="https://bikashkumars.github.io/profile-photo.jpg">
+    <meta name="twitter:image" content="https://bikashkumars.github.io/bikash.png">
     <meta name="twitter:image:alt" content="Bikash Kumar Sundaray - Solution Architect Portfolio">
     <meta name="twitter:creator" content="@bikashkumars">
     <meta name="twitter:site" content="@bikashkumars">
@@ -72,7 +72,7 @@
             "url": "https://www.airbus.com"
         },
         "url": "https://bikashkumars.github.io/",
-        "image": "https://bikashkumars.github.io/profile-photo.jpg",
+        "image": "https://bikashkumars.github.io/bikash.png",
         "sameAs": [
             "https://www.linkedin.com/in/bikashkumars",
             "https://github.com/bikashkumars"
@@ -456,6 +456,9 @@
                             <span class="skill-badge accent">Splunk</span>
                             <span class="skill-badge secondary">DevOps</span>
                             <span class="skill-badge accent">Web and AI Security</span>
+                            <span class="skill-badge secondary">Event-Driven Architecture</span>
+                            <span class="skill-badge secondary">Design Pattern</span>
+                            <span class="skill-badge secondary">Streaming</span>
                         </div>
                     </div>
                 </div>
@@ -618,6 +621,7 @@
                         </div>
                         <div class="skills-tags">
                             <span class="skill-tag cloudnative">Kafka</span>
+                            <span class="skill-tag cloudnative">RabbitMQ</span>
                             <span class="skill-tag cloudnative">Docker</span>
                             <span class="skill-tag cloudnative">containerd</span>
                             <span class="skill-tag cloudnative">Buildah</span>
@@ -634,6 +638,7 @@
                             <span class="skill-tag cloudnative">Kong</span>
                             <span class="skill-tag cloudnative">Observability</span>
                             <span class="skill-tag cloudnative">Helm Chart</span>
+                            <span class="skill-tag cloudnative">Jfrog</span>
                             <span class="skill-tag cloudnative">IaC</span>
                         </div>
                     </div>
@@ -1297,6 +1302,16 @@
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
+                            <a href="https://www.youtube.com/@bikashkumars" class="contact-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://x.com/bikashkumars" class="contact-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter (X)</span>
+                            </a>
                         </div>
                     </div>
                     <form class="contact-form">
@@ -1353,7 +1368,7 @@
         // Preload critical resources
         const preloadLink = document.createElement('link');
         preloadLink.rel = 'preload';
-        preloadLink.href = 'profile-photo.jpg';
+        preloadLink.href = 'bikash.png';
         preloadLink.as = 'image';
         document.head.appendChild(preloadLink);
 
@@ -1365,14 +1380,7 @@
             });
         });
 
-        // Service Worker for caching (optional)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => console.log('SW registered'))
-                    .catch(error => console.log('SW registration failed'));
-            });
-        }
+
     </script>
 </body>
 

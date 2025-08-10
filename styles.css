@@ -1446,6 +1446,7 @@ section {
     
     /* Fix section overlap on mobile */
     .hero {
+        padding-top: 5rem;
         padding-bottom: 4rem;
     }
     
